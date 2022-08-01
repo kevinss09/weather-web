@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0px;
+	height: 100%;
+}
+
+.topPage {
+	height: 65%;
+}
+
+.botPage {
+	height: 35%;
+}
+
+.botPage::before {
+	content: "";
+	background-color: black;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.4;
+}
+
+button {
+	cursor: pointer;
+}
+
+input {
+	-webkit-appearance: none;
+}
+
+button,
+input {
+	border: none;
+	background: none;
+	outline: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.formInput {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid transparent;
+}
+
+.formInput::placeholder {
+	color: black;
+}
