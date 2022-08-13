@@ -61,7 +61,7 @@ img {
 	border: none;
 	outline: none;
 	border-bottom: 2px solid #fff;
-	border-top: 2px solid transparent;
+	border-top: px solid transparent;
 }
 
 .formInput::placeholder {

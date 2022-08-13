@@ -80,6 +80,40 @@ export default class App2 extends React.Component {
 		};
 	}
 
+	componentDidMount() {
+		axios
+			.get(
+				`https://api.openweathermap.org/data/2.5/forecast?q=vancouver&units=metric&appid=964d5c93ec9190453d297f6518b8104f`
+			)
+			.catch((err) => {
+				alert("Please input the right city name!");
+			})
+			.then((res) => {
+				// const data = res.data;
+				this.setState({
+					data: res.data,
+					icon: res.data.list[0].weather[0].icon,
+					weather: res.data.list[0].weather[0].main,
+					temperature: res.data.list[0].main.temp,
+					feelsLike: res.data.list[0].main.feels_like,
+					humidity: res.data.list[0].main.humidity,
+					pressure: res.data.list[0].main.pressure,
+					countryName: res.data.city.country,
+					timeOffset: res.data.city.timezone,
+					temp2: res.data.list[7].main.temp,
+					image2: res.data.list[7].weather[0].icon,
+					temp3: res.data.list[15].main.temp,
+					image3: res.data.list[15].weather[0].icon,
+					temp4: res.data.list[23].main.temp,
+					image4: res.data.list[23].weather[0].icon,
+					temp5: res.data.list[31].main.temp,
+					image5: res.data.list[31].weather[0].icon,
+					temp6: res.data.list[39].main.temp,
+					image6: res.data.list[39].weather[0].icon,
+				});
+			});
+	}
+
 	handleClick = (name) => {
 		this.setState({ country: name }, () => {
 			axios
@@ -119,6 +153,7 @@ export default class App2 extends React.Component {
 	};
 
 	render() {
+		console.log(this.state.country);
 		return (
 			<div className="all h-screen">
 				<TopPage
