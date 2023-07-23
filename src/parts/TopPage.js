@@ -37,12 +37,15 @@ export default function TopPage({
 
 	const imageURL = "http://openweathermap.org/img/wn/" + icon + "@4x.png";
 	return (
-		<div className="topPage relative flex" id="top-page">
+		<div
+			className="topPage relative flex md:flex-row flex-col-reverse"
+			id="top-page"
+		>
 			{/* leftSection */}
-			<div className="w-1/2 h-full relative">
-				<div className="flex mx-24 mt-16 flex-col pl-0">
+			<div className="md:w-1/2 h-full relative">
+				<div className="flex md:mx-24 md:mt-16 flex-col pl-0">
 					<div className="flex items-end">
-						<h1 className="pr-1 text-9xl text-white font-bold">
+						<h1 className="pr-1 md:text-9xl text-xl text-white font-bold">
 							{getTime(timeOffset)}
 						</h1>
 						<h5 className="text-2xl text-white font-bold">
@@ -84,11 +87,11 @@ export default function TopPage({
 			{/* End of left section */}
 
 			{/* Right Section */}
-			<div className="w-1/2 h-full">
-				<div className="flex items-center justify-end mx-24 mt-16">
+			<div className="md:w-1/2 h-full relative">
+				<div className="flex items-center justify-end md:mx-24 md:mt-16">
 					<form
 						id="cityName"
-						className="relative flex items-center"
+						className="relative flex items-center mt-12"
 						onSubmit={handleClickTopPage}
 					>
 						<input
@@ -109,7 +112,7 @@ export default function TopPage({
 						<span className="msg"></span>
 					</form>
 				</div>
-				<div className="flex mx-24 mt-24 flex-col pr-0">
+				<div className="flex md:mx-24 md:mt-24 flex-col pr-0">
 					<div className="flex items-end flex-col">
 						<h2 className="text-4xl text-white font-bold pb-2">
 							{country === "" ? "Vancouver" : country}

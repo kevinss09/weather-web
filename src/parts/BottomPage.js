@@ -20,9 +20,9 @@ export default function BottomPage({
 	// const imageURL = "http://openweathermap.org/img/wn/" + icon + "@4x.png";
 	return (
 		<div className="botPage relative flex h-full w-fulll" id="bottom-page">
-			<div className="my-6 mx-8 flex flex-row w-full">
+			<div className="my-6 mx-8 flex md:flex-row flex-col w-full">
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full w-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Monday</h1>
 						<div className=" flex w-28 h-28">
@@ -38,7 +38,7 @@ export default function BottomPage({
 				{/* End of the first card that we gonna make  */}
 
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 w-full items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Tuesday</h1>
 						<div className=" flex w-28 h-28">
@@ -54,7 +54,7 @@ export default function BottomPage({
 				{/* End of the first card that we gonna make  */}
 
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 w-full items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Wednesday</h1>
 						<div className=" flex w-28 h-28">
@@ -70,7 +70,7 @@ export default function BottomPage({
 				{/* End of the first card that we gonna make  */}
 
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 w-full items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Thursday</h1>
 						<div className=" flex w-28 h-28">
@@ -86,7 +86,7 @@ export default function BottomPage({
 				{/* End of the first card that we gonna make  */}
 
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 w-full items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Friday</h1>
 						<div className=" flex w-28 h-28">
@@ -102,7 +102,7 @@ export default function BottomPage({
 				{/* End of the first card that we gonna make  */}
 
 				{/* First card that we gonna make  */}
-				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 w-1/6 items-center justify-center relative">
+				<div className="h-full bg-white opacity-90 rounded-xl flex mx-4 md:w-1/6 w-full items-center justify-center relative">
 					<div className="flex flex-col items-center justify-center h-full w-full">
 						<h1 className="text-xl text-black mb-3">Saturday</h1>
 						<div className=" flex w-28 h-28">
